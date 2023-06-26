@@ -8,7 +8,7 @@ export class PetEntity {
     readonly info: string,
     readonly address: string,
     readonly status: string,
-    readonly reward:number | null,
+    readonly reward: number | null,
     readonly rescuer_id: number | null,
     readonly owner_id: number,
     readonly losted_date: string,

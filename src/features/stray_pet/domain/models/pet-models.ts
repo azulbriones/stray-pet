@@ -7,7 +7,7 @@ export interface PetModel {
   info: string;
   address: string;
   status: string;
-  reward?:number;
+  reward?: number;
   rescuer_id?: number;
   owner_id?: number;
   losted_date: string;

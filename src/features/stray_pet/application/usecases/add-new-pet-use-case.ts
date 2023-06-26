@@ -1,4 +1,4 @@
-import { PetRepository } from '../../domain/repositories/pet-repository';
+import { PetRepository } from "../../domain/repositories/pet-repository";
 
 export class AddNewPetUseCase {
   constructor(private petRepository: PetRepository) {}
@@ -23,7 +23,7 @@ export class AddNewPetUseCase {
     info: string;
     address: string;
     status: string;
-    reward:number | null;
+    reward: number | null;
     rescuer_id: number | null;
     owner_id: number;
     losted_date: string;
@@ -39,7 +39,7 @@ export class AddNewPetUseCase {
       reward,
       rescuer_id,
       owner_id,
-      losted_date,
+      losted_date
     );
   }
 }

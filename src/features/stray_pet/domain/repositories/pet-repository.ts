@@ -9,10 +9,10 @@ export interface PetRepository {
     info: string,
     address: string,
     status: string,
-    reward:number | null,
+    reward: number | null,
     rescuer_id: number | null,
     owner_id: number | null,
-    losted_date: string,
+    losted_date: string
   ): Promise<PetEntity | null>;
 
   getAllPets(): Promise<PetEntity[]>;

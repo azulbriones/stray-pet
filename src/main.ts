@@ -1,7 +1,7 @@
 import bodyParser from "body-parser";
 import express from "express";
-import { strayPetRouter } from "./features/stray_pet/infraestructure/routes/stray-pet-router";
 
+import { strayPetRouter } from "./features/stray_pet/infraestructure/routes/stray-pet-router";
 
 const app = express();
 

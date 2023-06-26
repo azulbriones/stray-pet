@@ -1,7 +1,6 @@
 import { PetEntity } from "../../domain/entities/pet-entity";
 import { PetRepository } from "../../domain/repositories/pet-repository";
 
-
 export class GetPetByIdUseCase {
   constructor(private petRepository: PetRepository) {}
 

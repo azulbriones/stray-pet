@@ -1,8 +1,8 @@
 import { Pool, PoolClient } from "pg";
 
-import pool from "../config/postgre-sql-config";
 import { PetEntity } from "../../domain/entities/pet-entity";
 import { PetRepository } from "../../domain/repositories/pet-repository";
+import pool from "../config/postgre-sql-config";
 
 export class PostgreSqlPetRepository implements PetRepository {
   private pool: Pool;
@@ -19,10 +19,10 @@ export class PostgreSqlPetRepository implements PetRepository {
     info: string,
     address: string,
     status: string,
-    reward:number | null,
+    reward: number | null,
     rescuer_id: number | null,
     owner_id: number,
-    losted_date: string,
+    losted_date: string
   ): Promise<PetEntity | null> {
     let client: PoolClient | null = null;
     try {

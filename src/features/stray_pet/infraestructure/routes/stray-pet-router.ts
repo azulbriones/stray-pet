@@ -4,9 +4,9 @@ import {
   addNewPetUseController,
   deletePetUseController,
   getAllPetsUseController,
-  getPetByRescuerIdUseController,
   getPetByIdUseController,
   getPetByOwnerIdUseController,
+  getPetByRescuerIdUseController,
   updatePetUseController,
 } from "../dependecies";
 
