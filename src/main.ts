@@ -1,22 +1,16 @@
-import "./shared/infrastructure/load-env-vars";
-
 import bodyParser from "body-parser";
 import express from "express";
+import { strayPetRouter } from "./features/stray_pet/infraestructure/routes/stray-pet-router";
 
-import { config } from "./shared/infrastructure/config";
-import { userRouter } from "./users/infrastructure/rest-api/user-router";
 
-function boostrap() {
-  const app = express();
+const app = express();
 
-  app.use(bodyParser.json());
-  app.use("/users", userRouter);
+const PORT = 3000;
 
-  const { port } = config.server;
+app.use(bodyParser.json());
 
-  app.listen(port, () => {
-    console.log(`[APP] - Starting application on port ${port}`);
-  });
-}
+app.use("/strays-pets/", strayPetRouter);
 
-boostrap();
+app.listen(PORT, () => {
+  console.log(`[APP] - Starting application on port ${PORT}`);
+});
